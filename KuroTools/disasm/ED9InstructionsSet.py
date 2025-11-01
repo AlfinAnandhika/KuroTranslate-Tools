@@ -266,6 +266,7 @@ def init_command_names_dicts():
     (0xB, 0x8D) : "Cmd_map_8D", (0xB, 0x8F) : "Cmd_map_8F", (0xB, 0x90) : "Cmd_map_90", (0xB, 0x91) : "Cmd_map_91",
     (0xB, 0x92) : "Cmd_map_92", (0xB, 0x93) : "Cmd_map_93", (0xB, 0x94) : "Cmd_map_94", (0xB, 0x95) : "Cmd_map_95",
     (0xB, 0x96) : "Cmd_map_96", (0xB, 0x97) : "Cmd_map_97", (0xB, 0x98) : "Cmd_map_98",
+    (0xB, 0x5E) : "Cmd_map_5E",
 
     # Категория 0xC (12) (Party)
     (0xC, 0x00) : "Cmd_party_00", (0xC, 0x01) : "Cmd_party_01", (0xC, 0x02) : "Cmd_party_02", (0xC, 0x03) : "Cmd_party_03",
@@ -317,6 +318,9 @@ def init_command_names_dicts():
     (0xD, 0x7B) : "Cmd_btl_7B", (0xD, 0x7C) : "Cmd_btl_7C", (0xD, 0x7D) : "Cmd_btl_7D", (0xD, 0x7E) : "Cmd_btl_7E",
     (0xD, 0x7F) : "Cmd_btl_7F", (0xD, 0x80) : "Cmd_btl_80", (0xD, 0x81) : "Cmd_btl_81", (0xD, 0x83) : "Cmd_btl_83",
     (0xD, 0x84) : "Cmd_btl_84",
+    (0xD, 0x6C) : "Cmd_btl_6C",
+    (0xD, 0x6D) : "Cmd_btl_6D",
+    (0xD, 0x82) : "Cmd_btl_82",
 
     # Категория 0xE (14) (Unknown_5)
     (0xE, 0x00) : "Cmd_unknown_5_00", (0xE, 0x01) : "Cmd_unknown_5_01", (0xE, 0x02) : "Cmd_unknown_5_02",
@@ -420,6 +424,9 @@ def init_command_names_dicts():
     (0x15, 0x07) : "Cmd_unknown_9_07", (0x15, 0x08) : "Cmd_unknown_9_08", (0x15, 0x09) : "Cmd_unknown_9_09",
     (0x15, 0x0A) : "Cmd_unknown_9_0A", (0x15, 0x0B) : "Cmd_unknown_9_0B", (0x15, 0x0C) : "Cmd_unknown_9_0C",
     (0x15, 0x0D) : "Cmd_unknown_9_0D", (0x15, 0x0E) : "Cmd_unknown_9_0E",
+    (0x15, 0x0F) : "Cmd_unknown_9_0F",
+    (0x15, 0x10) : "Cmd_unknown_9_10",
+    (0x15, 0x11) : "Cmd_unknown_9_11",
 
     # Категория 0x16 (22) (MapJump)
     (0x16, 0x00) : "Cmd_mapjump_00", (0x16, 0x01) : "Cmd_mapjump_01", (0x16, 0x02) : "Cmd_mapjump_02",
@@ -428,6 +435,18 @@ def init_command_names_dicts():
     (0x16, 0x09) : "Cmd_mapjump_09", (0x16, 0x0A) : "Cmd_mapjump_0A", (0x16, 0x0B) : "Cmd_mapjump_0B",
     (0x16, 0x0C) : "Cmd_mapjump_0C", (0x16, 0x0D) : "Cmd_mapjump_0D", (0x16, 0x0E) : "Cmd_mapjump_0E",
     (0x16, 0x0F) : "Cmd_mapjump_0F", (0x16, 0x10) : "Cmd_mapjump_10",
+    (0x16, 0x11) : "Cmd_mapjump_11",
+    (0x16, 0x13) : "Cmd_mapjump_13",
+    (0x16, 0x16) : "Cmd_mapjump_16",
+    (0x16, 0x19) : "Cmd_mapjump_19",
+    (0x16, 0x21) : "Cmd_mapjump_21",
+    (0x16, 0x22) : "Cmd_mapjump_22",
+    (0x16, 0x23) : "Cmd_mapjump_23",
+    (0x16, 0x24) : "Cmd_mapjump_24",
+    (0x16, 0x26) : "Cmd_mapjump_26",
+    (0x16, 0x27) : "Cmd_mapjump_27",
+    (0x16, 0x28) : "Cmd_mapjump_28",
+    (0x16, 0x29) : "Cmd_mapjump_29",
 
     # Категория 0x17 (23) (UI)
     (0x17, 0x00) : "Cmd_ui_00", (0x17, 0x01) : "Cmd_ui_01", (0x17, 0x02) : "Cmd_ui_02", (0x17, 0x03) : "Cmd_ui_03",
@@ -453,6 +472,8 @@ def init_command_names_dicts():
     (0x18, 0x0C) : "Cmd_unknown_10_0C", (0x18, 0x0D) : "Cmd_unknown_10_0D", (0x18, 0x0E) : "Cmd_unknown_10_0E",
     (0x18, 0x0F) : "Cmd_unknown_10_0F", (0x18, 0x10) : "Cmd_unknown_10_10",
     (18, 13)     : "Cmd_unknown_10_13", # Original typo
+    (0x18, 0x15) : "Cmd_unknown_10_15",
+    (0x18, 0x17) : "Cmd_unknown_10_17",
 
     # Категория 0x19 (25) (BattleStatus)
     (0x19, 0x00) : "Cmd_battlestatus_00", (0x19, 0x01) : "Cmd_battlestatus_01", (0x19, 0x02) : "Cmd_battlestatus_02",
@@ -477,6 +498,17 @@ def init_command_names_dicts():
 
     # Категория 0x1B (27) (Unknown_11)
     (0x1B, 0x00) : "Cmd_unknown_11_00", (0x1B, 0x01) : "Cmd_unknown_11_01",
+    (0x1B, 0x02) : "Cmd_unknown_11_02",
+    (0x1B, 0x06) : "Cmd_unknown_11_06",
+    (0x1B, 0x07) : "Cmd_unknown_11_07",
+    (0x1B, 0x08) : "Cmd_unknown_11_08",
+    (0x1B, 0x09) : "Cmd_unknown_11_09",
+    (0x1B, 0x0A) : "Cmd_unknown_11_0A",
+    (0x1B, 0x0B) : "Cmd_unknown_11_0B",
+    (0x1B, 0x0C) : "Cmd_unknown_11_0C",
+    (0x1B, 0x0D) : "Cmd_unknown_11_0D",
+    (0x1B, 0x0E) : "Cmd_unknown_11_0E",
+    (0x1B, 0x0F) : "Cmd_unknown_11_0F",
 
     # Категория 0x1C (28) (Achievements)
     (0x1C, 0x00) : "Cmd_achievements_00", (0x1C, 0x01) : "Cmd_achievements_01", (0x1C, 0x02) : "Cmd_achievements_02",
